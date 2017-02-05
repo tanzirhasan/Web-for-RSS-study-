@@ -1,0 +1,97 @@
+body{
+    background-color: ghostwhite;
+
+}
+
+.navbar.navbar-inverse.navbar-fixed-top{
+    background: darkgreen;
+}
+h3{
+    text-shadow: 5px 5px 5px #999999;
+}
+
+
+#backgroundfig{
+    float: left;
+    box-shadow: 10px 10px  5px #888888;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+#backgroundtxt{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+/*#objetiveyxt{
+    float: right;
+}*/
+
+#background,#surveycohort,#result,#conclusion{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+
+#figtxt{
+    float: right;
+}
+#mainfig{
+    clear: both;
+  }
+.resultfig{
+    float: left;
+
+}
+.table{
+
+}
+
+/*table{*/
+    /*border-collapse: collapse;*/
+    /*margin-left: 50px;*/
+/*}*/
+
+/*tr:nth-child(2n){*/
+    /*background: limegreen;*/
+/*}*/
+
+
+/*thead{*/
+    /*background: greenyellow;*/
+/*}*/
+.table-striped>thead{
+    background-color: green;
+    color: white;
+}
+.table-striped>tbody>tr:nth-child(2n)>td {
+    background-color: #c5eecc;
+}
+
+footer{
+    background-color: gainsboro;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.btn-custom {
+    background-color: #0d5c00;
+    border-color: #0d5c00;
+
+}
+.btn>a,
+.btn>a:hover,
+.btn>a:focus,
+.btn>a:active{
+    color: white;
+    text-decoration: none;
+}
+/*.btn-custom:hover,*/
+/*.btn-custom:focus,*/
+/*.btn-custom:active,*/
+/*.btn-custom.active {*/
+    /*background-color: #094300;*/
+    /*border-color: #062900;*/
+/*}*/
+
