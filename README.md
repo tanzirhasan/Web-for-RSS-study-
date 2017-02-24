@@ -1,1 +1,1 @@
-# Web-for-RSS-study-
+# Website-for-RSS-study
