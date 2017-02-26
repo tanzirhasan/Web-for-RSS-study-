@@ -85,7 +85,7 @@
     <h3>Methods</h3>
     <p>An online survey of self-reported RSS/TSA/TSW-affected individuals was
         conducted between March 2014 and May 2015. The survey garnered 3840 adult
-        responses, 2093 of whom started TCS as children. The survey included TCS user demographics, details of TCS usage, and severity and duration of symptoms after cessation of TCS. The survey consisted of 64 multiple choice, numeric value and open-ended questions. A COSTEX (COrticoSTeroid EXposure) index was developed to quantify exposure reported by respondents. Data analysis and visualization followed.
+        responses, 2093 of whom started TCS as children. The survey included TCS user demographics, details of TCS usage, and severity and duration of symptoms after cessation of TCS. The survey consisted of 64 multiple choice, numeric value and open-ended questions. A <a href="#costex">COSTEX</a> (COrticoSTeroid EXposure) index was developed to quantify exposure reported by respondents. Data analysis and visualization followed.
     </p>
     <h3>Survey Cohort</h3>
     <ul>
@@ -490,6 +490,23 @@
 </div>
 
 </div>
+
+<div id="costex">
+    <header> <h3>Costex formula</h3></header>
+        <p>To  calculate the COSTEX index, the number of small tubes of each category were multiplied by the approapriate multiplyer and then added together.
+
+            <ul>
+                    <li> 1 * number of small tubes non-prescription</li>
+                    <li> 1.2 * number of small tubes Group 6</li>
+                    <li> 1.4 * number of small tubes Group 5</li>
+                    <li> 1.6 * number of small tubes Group 4</li>
+                    <li> 1.8 * number of small tubes Group 3</li>
+                    <li> 2.0 * number of small tubes Group 2</li>
+                    <li> 2.2 * number of small tubes Group 1</li>
+             </ul>
+            Ex: costex <- 1 * x1 + 1.2 * x2 +1.4 * x3 + 1.6 * x4 + 1.8 * x5 + 2.0 * x6 + 2.2 * x7
+             where xi are the appropriate variable names</p>
+</div>
 <div id="conclusion">
     <br>
     <h3>Conclusion</h3>
@@ -508,6 +525,7 @@
 
     </ol>
 </div>
+
 <footer  class="text-muted">
     <div class="container">
     <p align="center">&copy All site contents are copyrighted</p>
