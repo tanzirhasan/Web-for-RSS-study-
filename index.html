@@ -54,16 +54,12 @@
                     Purvi Sengar MS, Tanzir Hasan,Jessica Owens, Arrash Moghaddasi</small>
             </div>
 
-
-
 </div>
-
 <!-- jumbotron ends-->
+
 <div id="background">
     <header> <h3>Background</h3></header>
     <section id="backgroundtxt">
-
-
     <p>Topical corticosteroids (TCS) have been the mainstay of treatment for
     inflammatory dermatoses and are felt to be safe when used appropriately. In response to increased reports about Red Skin Syndrome (RSS) and Topical Steroid Addiction/Withdrawal (TSA/TSW), a systematic review (2015) conducted by the National Eczema Association concluded that RSS/TSA/TSW is a potential adverse effect of prolonged use of topical steroids. The phenomenon of RSS/TSA/TSW has been deemed rare. There is no validated definition, no patient registry, and no evidence-based treatment.
     </p>
@@ -71,8 +67,7 @@
     <figure id="backgroundfig" >
         <img src="images/clinical1.png" width="350" height="350">
     </figure>
-    <br>
-    <br>
+
     <p id=figtxt">Figure 1. Stages of RSS/TSA/TSW before and after cessation of TCS. Figure 1  (A)  A typical appearance of TSA, with prurigo-like eruption before withdrawal. (B) Appearance just after trial of decreasing the amount of potent topical steroids. The severity of addiction is so intense that the patient cannot safely withdraw by a gradual-decrease method. (C) The rebound erythema is spreading after complete cessation of steroids. (D) The appearance after 1 year. The rebound has almost subsided but hypersensitivity still remains 1</p>
        <p> <small>Source:  Mototsugu Fukaya MD, et al.   “Topical Steroid Addiction in Atopic Dermatitis” Drug, Healthcare and Patient Safety, 2014;6: pp.131–138.
         </small></p>
@@ -99,7 +94,8 @@
         <img src="images/cohort.png" height="350" width="625">
     </figure>
 </div>
-
+<br>
+<br>
 <div id="result">
     <br>
     <h3 >Results</h3>
@@ -505,7 +501,7 @@
                     <li> 2.2 * number of small tubes Group 1</li>
              </ul>
             Ex: costex <- 1 * x1 + 1.2 * x2 +1.4 * x3 + 1.6 * x4 + 1.8 * x5 + 2.0 * x6 + 2.2 * x7
-             where xi are the appropriate variable names</p>
+             where xi are the appropriate variable names
 </div>
 <div id="conclusion">
     <br>
@@ -557,6 +553,24 @@
                }
            });
        });
+       // The function actually applying the offset
+       function offsetAnchor() {
+           if (location.hash.length !== 0) {
+               window.scrollTo(window.scrollX, window.scrollY - 100);
+           }
+       }
+
+       // Captures click events of all <a> elements with href starting with #
+       $(document).on('click', 'a[href^="#"]', function(event) {
+           // Click events are captured before hashchanges. Timeout
+           // causes offsetAnchor to be called after the page jump.
+           window.setTimeout(function() {
+               offsetAnchor();
+           }, 0);
+       });
+
+       // Set the offset when entering page with hash present in the url
+       window.setTimeout(offsetAnchor, 0);
    </script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
